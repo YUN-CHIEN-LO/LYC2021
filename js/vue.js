@@ -12,6 +12,7 @@ var job_data = [{
         position: "Front-end Engineer Part Time",
         discription: "I assisted in the creation of a presentation webpage for the exhibition held by the National Tsin Hua University Library. My work included web image design and web page creation. 'Paper Plant' is a project I made, and it took about two weeks from planning to finish. Tools I used include: Vue.js, Swiper.js, Skrollr.js, Bootstrap, etc.",
         url: "https://i.imgur.com/fepoDXZm.png",
+        link: "https://www.lib.nthu.edu.tw/events/2020/PaperPlant/",
         moreinfos: ["https://i.imgur.com/qnrTvJg.png", "https://i.imgur.com/gYBuDCV.png", "https://i.imgur.com/tJDUSlq.png", "https://i.imgur.com/sm3v4M7.png"],
         tools: ["HTML", "CSS", "javaScript", "Vue.js", "Swiper.js", "Skrollr.js", "Bootstrap", "Sass", "Pug"]
     }, {
@@ -237,6 +238,12 @@ var event_data = [{
         position: "Stack/Queue Demo",
         url: "https://i.imgur.com/mnLmo9pl.png",
         link: "https://codepen.io/ycl/full/WNQgGBB"
+    }, {
+        date: 2020,
+        company: ["Programming Project", "koweb"],
+        position: "Club Demo Website",
+        url: "https://i.imgur.com/VnpEZQIl.png",
+        link: "https://yun-chien-lo.github.io/demoGPHC/index.html"
     }, {
         date: 2018,
         company: ["2018 China Mission Team Foundraisor", "postCard"],
