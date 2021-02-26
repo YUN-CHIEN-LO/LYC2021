@@ -10,7 +10,7 @@ var job_data = [{
         date: "2020",
         company: ["NTHU Libaray", "NTHU-Library"],
         position: "Front-end Engineer Part Time",
-        discription: "I assisted in the creation of a presentation webpage for the exhibition held by the National Tsin Hua University Library. My work included web image design and web page creation. 'Paper Plant' is a project I made, and it took about two weeks from planning to finish. Tools I used include: Vue.js, Swiper.js, Skrollr.js, Bootstrap, etc.",
+        discription: "I assisted in the creation of a presentation webpage for the exhibition held by the National Tsing Hua University Library. My work included web image design and web page creation. 'Paper Plant' is a project I made, and it took about two weeks from planning to finish. Tools I used include: Vue.js, Swiper.js, Skrollr.js, Bootstrap, etc.",
         url: "https://i.imgur.com/fepoDXZm.png",
         link: "https://www.lib.nthu.edu.tw/events/2020/PaperPlant/",
         moreinfos: ["https://i.imgur.com/qnrTvJg.png", "https://i.imgur.com/gYBuDCV.png", "https://i.imgur.com/tJDUSlq.png", "https://i.imgur.com/sm3v4M7.png"],
@@ -28,7 +28,7 @@ var job_data = [{
         date: "2019",
         company: ["SuSu Clothes", "susuclothes"],
         position: "Design Artist",
-        discription: "SuSu Clothes is a garment company operated by Tsin Hua University students, whose main business is the production of group garments. During the six months I have been in SuSu Clothes, my job content is to assist clients in making customized t-shirts, hats, flags and other fabrics. The job content includes designing patterns, drawing, fine-tuning, file conversion, conceptual drawing, etc. I worked with more than 20 groups of customers.",
+        discription: "SuSu Clothes is a garment company operated by Tsing Hua University students, whose main business is the production of group garments. During the six months I have been in SuSu Clothes, my job content is to assist clients in making customized t-shirts, hats, flags and other fabrics. The job content includes designing patterns, drawing, fine-tuning, file conversion, conceptual drawing, etc. I worked with more than 20 groups of customers.",
         url: "https://i.imgur.com/rxMMIalm.png",
         moreinfos: ["https://i.imgur.com/pAqWoTG.png"],
         tools: ["Illustrator"]
@@ -256,7 +256,7 @@ var event_data = [{
         date: 2019,
         company: ["2019 Solo Art Gallary", "gallary"],
         position: "Try & Error",
-        discription: "During my studies at National Tsin Hua University, I participated in the 'Tsinhua Art Collection' and was given the opportunity to hold a solo art gallary. The exhibition is called 'Try & Error', because I think that different things experienced in life are repeated attempts, mistakes, and continued attempts. Works include acrylic works and electric painting works.",
+        discription: "During my studies at National Tsing Hua University, I participated in the 'Tsinghua Art Collection' and was given the opportunity to hold a solo art gallary. The exhibition is called 'Try & Error', because I think that different things experienced in life are repeated attempts, mistakes, and continued attempts. Works include acrylic works and electric painting works.",
         url: "https://i.imgur.com/ihGPBmAl.png",
         moreinfos: ["https://i.imgur.com/c681Gonl.png", "https://i.imgur.com/NBdCDC0l.png", "https://i.imgur.com/ENMQrS8l.png", "https://i.imgur.com/v2zArFNl.png"],
         tools: []
