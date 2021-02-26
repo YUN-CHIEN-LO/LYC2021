@@ -1,0 +1,112 @@
+@import style
+*
+    // border: solid 1px #666
+@media screen and (max-width: 613px)
+    .bbb
+        display: none
+section#Skill
+    z-index: 10
+    width: 100vw
+    height: 100vh 
+    overflow: scroll
+    position: fixed
+    top: 0
+    left: 0  
+    transition: transform 0.5s cubic-bezier(0.5, -0.5, 0.5, 1.5) 
+    transform-origin: bottom right
+    padding-top: 100px
+    background: linear-gradient(135deg, #f73ec5 0%, #3da9c7 100%)
+    text-align: center
+    .title
+        height: 100px
+        transform: translateY(-100px)
+.skillgbox
+    display: flex
+    // justify-content: space-around
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    .skillgenre
+        width: 150px
+        height: 150px
+        margin: 20px
+        border: 10px solid white
+        border-radius: 100%
+        margin-bottom: 100px
+        display: flex
+        align-content: center
+        justify-content: center
+        h3
+            letter-spacing: 2px
+            line-height: 150%
+            color: white
+            font-size: 20px
+            margin: 0
+            position: absolute
+            transform: translate(-50%, -50%)
+            top: 50%
+            left: 50%
+            font-weight: normal
+.skillRow 
+    display: flex
+    // flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 60vw
+    min-width: 400px
+    margin-right: auto
+    margin-left: auto
+    margin-bottom: 100px
+    flex-wrap: wrap
+    .skillB, .skillS
+        // height: 100px
+    .skillS
+        flex: 1
+        min-width: 300px
+        color: white
+        line-height: 150%
+        letter-spacing: normal
+    .skillB
+        flex: 3
+        min-width: 300px
+        border-left: solid 5px white
+        // padding: 50px
+    .percentage
+        color: white
+        padding: 5px
+        padding-left: 20px
+    .item
+        position: absolute
+        padding: 5px
+        left: 20px
+        font-size: 20px
+        color: #333
+
+.skill
+    display: flex
+    // height: 50px
+    width: 100%
+    margin: 10px
+    &:hover
+        .empbar
+            left: -50px
+    .empbar
+        width: 100%
+        height: 40px
+        background-color: #fff
+        position: absolute
+        top: 0
+        left: 0
+        transition: 0.3s
+        border-top-right-radius: 10px
+    .blank
+        background: transparent
+        border: solid 2px white
+        color: white
+    .skillbar
+        height: 40px
+        width: 80%
+        overflow: hidden
+        border-left: solid 2px white
+        
+        // background-color: #fff

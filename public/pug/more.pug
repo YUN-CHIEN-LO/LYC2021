@@ -1,0 +1,82 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title More Works
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+        script(src="https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.1.0/waterfall.min.js") 
+        
+        link(rel="stylesheet", href="css/more.css")
+    body 
+        .background0
+
+        
+
+        section#More.changePage
+            .title#extitle(onload="letter2(this.id)")
+                h1.ml61
+                    span.text-wrapper1
+                        span.letters1 More Works
+
+            .exCon#event
+                .job(v-for="(event, id) in even(events.slice())" v-bind:id="event.company[1]")
+                    h4.floatup {{event.company[0]}}
+                    h3.floatup {{event.position}}
+                    img.jobImg(:src="event.url" @click="popupEx(event.company[1])")
+                    .ExperiencePopUp.changePage
+                        .popTitle
+                            h1 {{event.company[0]}} / {{event.date}}
+                            .text.ml61
+                                span.text-wrapper1
+                                    span.letters1 {{event.position}}
+                        //- .popRow
+                        .popRow(v-if="event.discription")
+                            .popBlock.discription
+                                h4.popText {{event.discription}}
+                        iframe(v-if="event.link" :src="event.link", frameborder="0") 
+                        .popRow
+                            .popBlock(v-for="(info,id) in event.moreinfos")
+                                
+                                img.popImg(:src="info") 
+                        .popRow 
+                            .popTool(v-for="(tool,id) in event.tools") {{tool}}
+                        .back(@click="popcloseEx(event.company[1])") Back
+            
+            
+            .link 
+                a.linkBox#linkBox21(onmouseover="letter(this.id)" href="index.html")
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Home
+                    .linkCover(onclick="click1()")
+
+                a.linkBox#linkBox23(onmouseover="letter(this.id)" href="experience.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Experience
+                    .linkCover(onclick="click1()")
+                a.linkBox#linkBox22(onmouseover="letter(this.id)" href="skill.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Skill
+                    .linkCover(onclick="click1()")
+                a.linkBox#linkBox24(onmouseover="letter(this.id)" href="contact.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Contact Me
+                    .linkCover(onclick="click1()")
+        section#nav 
+            a.filter#filterA(href="moreCh.html")
+                h3 中文
+    script(src="js/function.js")
+    script(src="js/vue.js")

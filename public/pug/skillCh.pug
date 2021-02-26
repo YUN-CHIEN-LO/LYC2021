@@ -1,0 +1,109 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title 專業能力
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js") 
+        
+        link(rel="stylesheet", href="css/skill.css")
+    body 
+        section#Skill.changePage
+            .title#extitle(onload="letter2(this.id)")
+                h1.ml61
+                    span.text-wrapper1
+                        span.letters1 專業能力
+            .skillgbox
+                .skillgenre
+                    h3 程式撰寫
+                .skillgenre
+                    h3 網頁前端
+                .skillgenre
+                    h3 平面設計
+                .skillgenre
+                    h3 電繪插圖
+            .skillRow 
+                h1.skillS 程式<br>語言
+                .skillB#program 
+                    .skill(v-for = "(skill, id) in skills")
+                        .skillbar(:style="{width: skill.percentage-20+'%'}")
+                            .empbar
+                        .item {{skill.item}}
+                        .percentage {{skill.percentage}}%
+            .skillRow 
+                h1.skillS 程式<br>工具
+                .skillB#skill
+                    .skill(v-for = "(skill, id) in skills")
+                        .skillbar(:style="{width: skill.percentage-20+'%'}")
+                            .empbar
+                        .item {{skill.item}}
+                        .percentage {{skill.percentage}}%
+            .skillRow 
+                h1.skillS 軟體<br>操作
+                .skillB#soft
+                    .skill(v-for = "(skill, id) in skills")
+                        .skillbar(:style="{width: skill.percentage-20+'%'}")
+                            .empbar
+                        .item {{skill.item}}
+                        .percentage {{skill.percentage}}%
+            .skillRow 
+                h1.skillS 英文<br>能力
+                .skillB#eng
+                    .skill(v-for = "(skill, id) in skills")
+                        .skillbar(:style="{width: skill.percentage-20+'%'}")
+                            .empbar
+                        .item {{skill.item}}
+                        .percentage {{skill.percentage}}%
+                    .skill
+                        .skillbar(style="width:100%")
+                            .empbar.blank
+                        .item(style="color:white") 托福成績 : 95
+                    .skill
+                        .skillbar(style="width:100%")
+                            .empbar.blank
+                        .item(style="color:white") 多益成績 : 930
+                    .skill
+                        .skillbar(style="width:100%")
+                            .empbar.blank
+                        .item(style="color:white") 全民英檢中高級：通過
+                        
+                        
+                            
+
+                    
+            .link 
+                a.linkBox#linkBox22(onmouseover="letter(this.id)" href="indexCh.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 返回首頁
+                a.linkBox#linkBox21(onmouseover="letter(this.id)" href="experienceCh.html")
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 工作經驗
+                    .linkCover(onclick="click1()")
+
+                a.linkBox#linkBox23(onmouseover="letter(this.id)" href="moreCh.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 更多作品
+                    .linkCover(onclick="click1()")
+                a.linkBox#linkBox24(onmouseover="letter(this.id)" href="contactCh.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 聯絡方式
+        section#nav 
+            a.filter#filterA(href="skill.html")
+                h3 English
+    script(src="js/function.js")
+    script(src="js/vueCh.js")
+    

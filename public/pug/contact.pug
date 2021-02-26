@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Contact ME
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js") 
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css")
+        link(rel="stylesheet", href="css/contact.css")
+    body 
+        section#Skill.changePage
+            .title#extitle(onload="letter2(this.id)")
+                h1.ml61
+                    span.text-wrapper1
+                        span.letters1 Contact Me
+            h4 Email：yunchienlo@gmail.com
+            h4 Taiwan Hsin Chu
+            .links
+                .link#linkf(onclick='window.open("https://www.facebook.com/profile.php?id=100004197811063&viewas=100000686899395")')
+                    i.fab.fa-facebook
+                .link#linkl(onclick='window.open("https://line.me/ti/p/8N6FRgHJKd")')
+                    i.fab.fa-line
+                .link#linkg(onclick='showmail()')
+                    i.fas.fa-envelope-square
+            .mailbox#mailbox
+                span
+                    button.cancel(onclick="sendani()") X
+                span E-mail：
+                    input#email(placeholder="yunchienlo@gmail.com" type="text" name="email") 
+                span Title：
+                    input#name(placeholder="Yun Chien LO" type="text")
+                span Content：
+                    textarea#content(placeholder="Hi! Nice to meet you!" )
+                span
+                    button(onclick="sendemail();sendani()") Send
+
+                    
+            .link 
+                a.linkBox#linkBox22(onmouseover="letter(this.id)" href="index.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Home
+                a.linkBox#linkBox21(onmouseover="letter(this.id)" href="experience.html")
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Experience
+                    .linkCover(onclick="click1()")
+
+                a.linkBox#linkBox23(onmouseover="letter(this.id)" href="skill.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Skills
+                    .linkCover(onclick="click1()")
+                a.linkBox#linkBox24(onmouseover="letter(this.id)" href="more.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters More Work
+        section#nav 
+            a.filter#filterA(href="contactCh.html")
+                h3 中文
+    script(src="js/function.js")
+    script(src="js/vue.js")
+    

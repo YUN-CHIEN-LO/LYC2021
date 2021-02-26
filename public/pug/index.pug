@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title Yun Chien Lo 2021
+        
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js") 
+        link(rel="stylesheet", href="css/style.css")
+
+    body 
+        
+        .background
+
+        section#Home
+            img.lycBack.lycBlur(src="https://i.imgur.com/sjNKkln.png", alt="")
+            img.lycBack(src="https://i.imgur.com/UJyKLBL.png", alt="")
+            .mouse#mouse
+                img.lycFront#lycA(src="https://i.imgur.com/sjNKkln.png", alt="")
+                img.lycFront.lycBlur(src="https://i.imgur.com/UJyKLBL.png", alt="")
+                .t
+                    h3 2021
+                    h1 Yun Chien Lo
+            h1.ml61
+                span.text-wrapper1
+                    span.letters1 Wellcome!
+
+        section#About
+            h1 Hello,
+            h1 I'm 
+            h1.hightlight Yun
+            h1.hightlight Chien
+            h1.hightlight Lo,
+            h1 a
+            h1 newly
+            h1 graduated
+            h1 student
+            h1 from
+            h1.hightlight National
+            h1.hightlight Tsin
+            h1.hightlight Hua
+            h1.hightlight University,
+            h1 Taiwan.
+            h1 I 
+            h1 majored 
+            h1 in 
+            h1.hightlight computer 
+            h1.hightlight science,
+            h1 and 
+            h1 I 
+            h1 joined
+            h1 the
+            h1.hightlight Innovative 
+            h1.hightlight Design 
+            h1.hightlight Program
+            h1 as
+            h1 well.
+            h1 Art
+            h1 and
+            h1 design
+            h1 have
+            h1 always
+            h1 been
+            h1 my
+            h1 passion,
+            h1 along 
+            h1 side
+            h1 with
+            h1 my
+            h1 ability
+            h1 in
+            h1 programming,
+            h1 I
+            h1 dreamed
+            h1 of being
+            h1 parts
+            h1 of
+            h1 the
+            h1 creative
+            h1 coding
+            h1 industry.
+
+        section#Link
+            .link 
+                a.linkBox#linkBox1(onmouseover="letter(this.id)" href="experience.html")
+                    h3.ml11
+                        span.text-wrapper(onclick="click1()")
+                            span.line.line1
+                            span.letters Experience
+                    .linkCover(onclick="click1()" )
+
+                a.linkBox#linkBox2(onmouseover="letter(this.id)" href="skill.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Skills
+                    .linkCover(onclick="click1()" )
+                a.linkBox#linkBox3(onmouseover="letter(this.id)" href="more.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters More Work
+                    .linkCover(onclick="click1()" )
+                a.linkBox#linkBox4(onmouseover="letter(this.id)" href="contact.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters Contact Me
+
+        
+            
+        section#nav 
+            a.filter#filterA(href="indexCh.html")
+                h3 中文
+
+        
+
+        script(src="js/function.js")
+        script(src="js/vue.js")

@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title 工作經驗
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+        
+        link(rel="stylesheet", href="css/experiences.css")
+    body 
+        .background0
+        section#Experience.changePage
+            .title#extitle(onload="letter2(this.id)")
+                h1.ml61
+                    span.text-wrapper1
+                        span.letters1 工作經驗
+            .exCon#job
+                .job(v-for="(job, id) in jobs.slice()" v-bind:id="job.company[1]")
+                    h4.floatup {{job.company[0]}}
+                    h3.floatup {{job.position}}
+                    img.jobImg(:src="job.url" @click="popupEx(job.company[1])")
+                    .ExperiencePopUp.changePage
+                        .popTitle.discription
+                            h1 {{job.company[0]}} / {{job.date}}
+                            .text.ml61
+                                span.text-wrapper1
+                                    span.letters1 {{job.position}}
+                        .popRow
+                            .popBlock
+                                h4.popText {{job.discription}}
+                        .popRow
+                            .popBlock(v-for="(info,id) in job.moreinfos")
+                                img.popImg(:src="info") 
+                        iframe(v-if="job.link" :src="job.link", frameborder="0") 
+                        .popRow 
+                            .popTool(v-for="(tool,id) in job.tools") {{tool}}
+                        .back(@click="popcloseEx(job.company[1])") Back
+            
+            .link 
+                a.linkBox#linkBox21(onmouseover="letter(this.id)" href="indexCh.html")
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 主頁
+                    .linkCover(onclick="click1()")
+
+                a.linkBox#linkBox22(onmouseover="letter(this.id)" href="skillCh.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 專業能力
+                    .linkCover(onclick="click1()")
+                a.linkBox#linkBox23(onmouseover="letter(this.id)" href="moreCh.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 更多作品
+                    .linkCover(onclick="click1()")
+                a.linkBox#linkBox24(onmouseover="letter(this.id)" href="contactCh.html") 
+                    h3.ml11
+                        span.text-wrapper
+                            span.line.line1
+                            span.letters 聯絡方式
+        section#nav 
+            a.filter#filterA(href="experience.html")
+                h3 English
+    script(src="js/function.js")
+    script(src="js/vueCh.js")
