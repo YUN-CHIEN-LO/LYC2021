@@ -49,7 +49,7 @@ function letter2(this_id) {
 
     // Wrap every letter in a span
     var textWrapper = document.querySelector('#' + this_id + ' .ml61 .letters1');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter1'>$&</span>");
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter1' >$&</span>");
 
     anime.timeline({ loop: false })
         .add({

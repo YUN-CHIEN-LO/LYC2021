@@ -22,14 +22,14 @@
 
 @media screen and (max-width: 613px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     letter-spacing: 20px; }
   h2 {
-    font-size: 2.5rem; }
+    font-size: 1.5rem; }
   h3 {
-    font-size: 2rem; }
-  h4 {
     font-size: 1.55rem; }
+  h4 {
+    font-size: 1.25rem; }
   h5 {
     font-size: 1.4rem;
     line-height: 40px; }
@@ -112,14 +112,6 @@ section#Home {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
-.ml61 {
-  position: absolute;
-  transform: translate(-50%, 0%);
-  top: 10vh;
-  left: 50%;
-  font-weight: 900;
-  font-size: 3.3em; }
-
 .ml61 .text-wrapper1 {
   position: relative;
   display: inline-block;
@@ -130,7 +122,8 @@ section#Home {
   width: 80vw;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  letter-spacing: 5px; }
 
 .ml61 .letter1 {
   display: inline-block;
@@ -284,8 +277,10 @@ span {
 
 iframe {
   width: 100vw;
-  height: 100vh;
-  margin-top: 200px; }
+  height: 100vh; }
+
+.discription {
+  height: 1.1rem; }
 
 @media screen and (max-width: 613px) {
   .bbb {

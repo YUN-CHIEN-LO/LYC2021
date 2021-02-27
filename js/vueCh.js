@@ -12,7 +12,7 @@ var job_data = [{
         position: "網頁工讀生",
         discription: "協助清大圖書館置辦的展覽製做呈獻網頁，工作內容包括網頁形象設計以及製做網頁。「紙植物 Paper Plant」是我製做的專案，從規劃到結案大概花了兩個禮拜的時間。其中我使用的工具有：Vue.js，Swiper.js，Skrollr.js，Bootstrap等。",
         url: "https://i.imgur.com/fepoDXZm.png",
-        link: "https://www.lib.nthu.edu.tw/events/2020/PaperPlant/",
+        // link: "https://www.lib.nthu.edu.tw/events/2020/PaperPlant/",
         moreinfos: ["https://i.imgur.com/qnrTvJg.png", "https://i.imgur.com/gYBuDCV.png", "https://i.imgur.com/tJDUSlq.png", "https://i.imgur.com/sm3v4M7.png"],
         tools: ["HTML", "CSS", "javaScript", "Vue.js", "Swiper.js", "Skrollr.js", "Bootstrap", "Sass", "Pug"]
     }, {
@@ -48,7 +48,7 @@ var job_data = [{
         position: "logo設計",
         discription: "為清大教務處課組設計清大拾穗計畫logo，應用於官方網站、宣傳印刷品，以及各式文件。此為一次性的案件。",
         url: "https://i.imgur.com/Sdak11jm.png",
-        link: "http://project.isync.tw/",
+        // link: "http://project.isync.tw/",
         moreinfos: ["https://i.imgur.com/NefUScP.png"],
         tools: ["Illustrator"]
     },

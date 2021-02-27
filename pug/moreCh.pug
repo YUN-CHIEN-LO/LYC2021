@@ -7,7 +7,7 @@ html(lang="en")
         title 更多作品
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
-        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        //- script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
         script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
         script(src="https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.1.0/waterfall.min.js") 
@@ -30,9 +30,9 @@ html(lang="en")
                     h3.floatup {{event.position}}
                     img.jobImg(:src="event.url" @click="popupEx(event.company[1])")
                     .ExperiencePopUp.changePage
-                        .popTitle.discription
+                        .popRow.popTitle
                             h1 {{event.company[0]}} / {{event.date}}
-                            .text.ml61
+                            h1.text.ml61
                                 span.text-wrapper1
                                     span.letters1 {{event.position}}
                         //- .popRow
