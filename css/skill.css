@@ -78,6 +78,13 @@ section#Home {
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
+  section#Home .title {
+    height: 100px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   section#Home .lycBack {
     position: absolute;
     transform: translate(-50%, 0);
@@ -301,7 +308,11 @@ section#Skill {
   text-align: center; }
   section#Skill .title {
     height: 100px;
-    transform: translateY(-100px); }
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .skillgbox {
   display: flex;
