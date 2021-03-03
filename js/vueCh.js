@@ -216,6 +216,12 @@ var vm_eng = new Vue({
 
 var event_data = [{
         date: 2020,
+        company: ["程式作品", "slides"],
+        position: "圖片畫展",
+        url: "https://i.imgur.com/Pdl3r6Al.png",
+        link: "https://codepen.io/ycl/full/RwoJpVj"
+    }, {
+        date: 2020,
         company: ["程式作品", "pickColor"],
         position: "色票產生器",
         url: "https://i.imgur.com/pffwuoEl.png",

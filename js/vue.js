@@ -216,6 +216,12 @@ var vm_eng = new Vue({
 
 var event_data = [{
         date: 2020,
+        company: ["Programming Project", "slides"],
+        position: "Online Gallery",
+        url: "https://i.imgur.com/Pdl3r6Al.png",
+        link: "https://codepen.io/ycl/full/RwoJpVj"
+    }, {
+        date: 2020,
         company: ["Programming Project", "pickColor"],
         position: "Color Generator",
         url: "https://i.imgur.com/pffwuoEl.png",
