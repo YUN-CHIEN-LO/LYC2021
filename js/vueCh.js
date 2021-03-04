@@ -110,7 +110,7 @@ var program_data = [{
         percentage: "80"
     }, {
         item: "C/C++",
-        percentage: "70"
+        percentage: "60"
     }
 ];
 
@@ -139,11 +139,8 @@ var skill_data = [{
         item: "Vue.js",
         percentage: "75"
     }, {
-        item: "P5.js",
-        percentage: "75"
-    }, {
         item: "GStreamer",
-        percentage: "75"
+        percentage: "65"
     }
     //   {
     //   item: "",
@@ -350,8 +347,8 @@ var event_data = [{
         link: "https://codepen.io/ycl/full/xxGdzqR"
     },
     {
-        date: 2019,
-        company: ["2019", "reseme"],
+        date: 2020,
+        company: ["2020", "reseme"],
         position: "個人履歷網站",
         discription: "",
         url: "https://i.imgur.com/YpZS3VPl.png",
