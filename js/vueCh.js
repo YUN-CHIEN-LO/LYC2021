@@ -9,7 +9,7 @@ var job_data = [{
     }, {
         date: "2020",
         company: ["清大圖書館", "NTHU-Library"],
-        position: "網頁工讀生",
+        position: "網頁兼職助理",
         discription: "協助清大圖書館置辦的展覽製做呈獻網頁，工作內容包括網頁形象設計以及製做網頁。「紙植物 Paper Plant」是我製做的專案，從規劃到結案大概花了兩個禮拜的時間。其中我使用的工具有：Vue.js，Swiper.js，Skrollr.js，Bootstrap等。",
         url: "https://i.imgur.com/fepoDXZm.png",
         // link: "https://www.lib.nthu.edu.tw/events/2020/PaperPlant/",
