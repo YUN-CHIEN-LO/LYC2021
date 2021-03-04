@@ -12,7 +12,7 @@ var job_data = [{
         position: "Front-end Engineer Part Time",
         discription: "I assisted in the creation of a presentation webpage for the exhibition held by the National Tsing Hua University Library. My work included web image design and web page creation. 'Paper Plant' is a project I made, and it took about two weeks from planning to finish. Tools I used include: Vue.js, Swiper.js, Skrollr.js, Bootstrap, etc.",
         url: "https://i.imgur.com/fepoDXZm.png",
-        link: "https://www.lib.nthu.edu.tw/events/2020/PaperPlant/",
+        // link: "https://www.lib.nthu.edu.tw/events/2020/PaperPlant/",
         moreinfos: ["https://i.imgur.com/qnrTvJg.png", "https://i.imgur.com/gYBuDCV.png", "https://i.imgur.com/tJDUSlq.png", "https://i.imgur.com/sm3v4M7.png"],
         tools: ["HTML", "CSS", "javaScript", "Vue.js", "Swiper.js", "Skrollr.js", "Bootstrap", "Sass", "Pug"]
     }, {
@@ -49,7 +49,7 @@ var job_data = [{
         discription: "I Designed the Logo for NTHU Special Administration, which is used in official websites, promotional prints, and various documents。",
         url: "https://i.imgur.com/Sdak11jm.png",
         moreinfos: ["https://i.imgur.com/NefUScP.png"],
-        link: "http://project.isync.tw/",
+        // link: "http://project.isync.tw/",
         tools: ["Illustrator"]
     },
     {
