@@ -36,14 +36,13 @@ html(lang="en")
                                 span.text-wrapper1
                                     span.letters1 {{event.position}}
                         //- .popRow
-                        .popRow(v-if="event.discription")
+                        .popRow
                             .popBlock
                                 h4.popText {{event.discription}}
-                        iframe(v-if="event.link" :src="event.link", frameborder="0") 
                         .popRow
                             .popBlock(v-for="(info,id) in event.moreinfos")
-                                
                                 img.popImg(:src="info") 
+                        iframe(v-if="event.link" :src="event.link", frameborder="0") 
                         .popRow 
                             .popTool(v-for="(tool,id) in event.tools") {{tool}}
                         .back(@click="popcloseEx(event.company[1])") 返回
