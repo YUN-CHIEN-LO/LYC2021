@@ -213,6 +213,12 @@ var vm_eng = new Vue({
 
 var event_data = [{
         date: 2020,
+        company: ["程式作品", "table"],
+        position: "Boostrap Table 練習",
+        url: "https://i.imgur.com/2Hfz2Xwl.png",
+        link: "https://yun-chien-lo.github.io/demo/index.html"
+    }, {
+        date: 2020,
         company: ["程式作品", "slides"],
         position: "圖片畫展",
         url: "https://i.imgur.com/Pdl3r6Al.png",
